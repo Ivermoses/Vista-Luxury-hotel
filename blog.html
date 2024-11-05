@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Blog</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">VISTA LUXE</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Index</a></li>
+        <li class="dropdown">
+          <a href="#">Rooms <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="single-room.html">Single Room</a></li>
+            <li><a href="double-room.html">Double Room</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Pages <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking-system.html">Booking System</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Blog <i class="fas fa-chevron-down"></i>
+          </i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Latest Posts</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="booking-system.html" id="btn" class="btn">Booking System</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!----------------------Banner section  start here-------------->
+  <main class="banner-2">
+    <div class="overlay-2"></div>
+    <div class="banner-content-2">
+      <h1>Our Blog!</h1>
+      <p>"Capture unforgettable moments at VISTA LUXE Hotel with stunning night views."</p>
+    </div>
+  </main>
+  <!----------------------Banner section  ends here---------------->
+  
+  <!----------------------Banner style section  start here----------->
+  <style>
+    .banner-2 {
+    position: relative;
+    background: url('assets/img/banner.jpg') no-repeat center center/cover;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--white);
+    padding: 40px;
+  }
+
+  .overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.877);
+  }
+
+  .banner-content-2 {
+    z-index: 2;
+    text-align: center;
+  }
+
+  .banner-content-2 h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .banner-content-2 p {
+    font-size: 18px;
+    margin: 20px;
+  }  
+
+  </style>
+  <!----------------------Banner style section  ends here------------>
+
+  <!-- -------------------Hotel blog section start here-------->
+  <div class="blog">
+
+    <section class="secton">
+
+      <main class="blog-section">
+        <div class="blog-heading">
+          <h1>Welcome to the Hotel Alpha Blog!</h1>
+          <p>We’re excited to have you here! At Hotel Alpha, we’re all about creating exceptional experiences, and our blog is your go-to source for travel inspiration, hotel tips, and insider knowledge about the local area.  Stay tuned for exciting content and start planning your perfect escape with us!
+          </p>
+        </div>
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-1.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-4.jpg" alt="Author" class="profile-pic">
+              </div>
+              <div class="date">
+                <span>20th</span>
+                <span>Jul.</span>
+              </div>
+            </div>
+              <div class="card-content">
+                <div class="profile-d">
+                  <p class="author">By: Tanzim</p>
+                  <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+                </div>
+                <h3>Best Night Photo at Alpha Hotel</h3>
+                <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-2.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-2.jpg" alt="Author" class="profile-pic">
+              </div>
+              <div class="date">
+                <span>25th</span>
+                <span>Aug.</span>
+              </div>
+            </div>
+              <div class="card-content">
+                <div class="profile-d">
+                  <p class="author">By: Tanzim</p>
+                  <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+                </div>
+                <h3>Magic of the night at Alpha Hotel</h3>
+                <p>"Experience the enchanting nightscape at Alpha Hotel, Horizon Inn, and Luna."</p>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-3.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-3.jpg" alt="Author" class="profile-pic">
+              </div>
+                <div class="date">
+                  <span>21st</span>
+                  <span>Sep.</span>
+                </div>
+            </div>
+            <div class="card-content">
+              <div class="profile-d">
+                <p class="author">By: Tanzim</p>
+                <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+              </div>
+              <h3>Best Night Photo at Alpha Hotel</h3>
+              <p>"Experience the enchanting nightscape at Alpha Hotel, Horizon Inn, and Luna."</p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-1.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-4.jpg" alt="Author" class="profile-pic">
+              </div>
+              <div class="date">
+                <span>20th</span>
+                <span>Jul.</span>
+              </div>
+            </div>
+              <div class="card-content">
+                <div class="profile-d">
+                  <p class="author">By: Tanzim</p>
+                  <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+                </div>
+                <h3>Best Night Photo at Alpha Hotel</h3>
+                <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+              </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-2.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-2.jpg" alt="Author" class="profile-pic">
+              </div>
+              <div class="date">
+                <span>25th</span>
+                <span>Aug.</span>
+              </div>
+            </div>
+              <div class="card-content">
+                <div class="profile-d">
+                  <p class="author">By: Tanzim</p>
+                  <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+                </div>
+                <h3>Magic of the night at Alpha Hotel</h3>
+                <p>"Experience the enchanting nightscape at Alpha Hotel, Horizon Inn, and Luna."</p>
+              </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-3.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-3.jpg" alt="Author" class="profile-pic">
+              </div>
+                <div class="date">
+                  <span>21st</span>
+                  <span>Sep.</span>
+                </div>
+            </div>
+            <div class="card-content">
+              <div class="profile-d">
+                <p class="author">By: Tanzim</p>
+                <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+              </div>
+              <h3>Best Night Photo at Alpha Hotel</h3>
+              <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-3.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-3.jpg" alt="Author" class="profile-pic">
+              </div>
+                <div class="date">
+                  <span>21st</span>
+                  <span>Sep.</span>
+                </div>
+            </div>
+            <div class="card-content">
+              <div class="profile-d">
+                <p class="author">By: Tanzim</p>
+                <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+              </div>
+              <h3>Best Night Photo at Alpha Hotel</h3>
+              <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-3.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-3.jpg" alt="Author" class="profile-pic">
+              </div>
+                <div class="date">
+                  <span>21st</span>
+                  <span>Sep.</span>
+                </div>
+            </div>
+            <div class="card-content">
+              <div class="profile-d">
+                <p class="author">By: Tanzim</p>
+                <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+              </div>
+              <h3>Best Night Photo at Alpha Hotel</h3>
+              <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+            </div>
+          </div>
+          <!-- card 9 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-3.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-3.jpg" alt="Author" class="profile-pic">
+              </div>
+                <div class="date">
+                  <span>21st</span>
+                  <span>Sep.</span>
+                </div>
+            </div>
+            <div class="card-content">
+              <div class="profile-d">
+                <p class="author">By: Tanzim</p>
+                <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+              </div>
+              <h3>Best Night Photo at Alpha Hotel</h3>
+              <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <div class="pagination">
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="page active">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="next">&gt;</a>
+      </div>
+    </section>
+  </div>
+
+  <style>/* Pagination style */
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    
+    }
+    
+    /* General styles for pagination buttons */
+    .pagination a {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 0 5px;
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: var(--white);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    /* Active page styling */
+    .pagination a.active {
+      background-color: var(--icon-color);
+      color: var(--white);
+      /* border-color: #f89c66; */
+    }
+    
+    /* Hover effect */
+    .pagination a:hover {
+      background-color: var(--hover-color);
+      color: var(--black-color);
+    }
+    
+    /* Styles for the previous and next buttons */
+    .pagination a.prev,
+    .pagination a.next {
+      background-color: var(--white);
+      color: #333;
+      border: 1px solid #ddd;
+      font-size: 18px;
+    }
+    
+    .pagination a.prev:hover,
+    .pagination a.next:hover {
+      background-color: var(--hover-color);
+      color: var(--black-color);
+    }
+    
+  </style>
+    
+  <!-- -------------------Hotel blog section end here------------->
+
+  <!-- -------------------Our Partners section end here----------->
+  <div class="partners-section">
+    <div class="partners-content">
+      <h2>Our Partners</h2>
+      <p>We proudly collaborate with a network of trusted partners who help us deliver exceptional value and quality. Their expertise and support play a key role in our shared success, ensuring that we continue to meet the highest standards in everything we do.</p>
+    </div>
+    <div class="partners-logos">
+      <div class="logo-container">
+        <img src="assets/icons/icon-1.png" alt="Elite Property">
+        <img src="assets/icons/icon-2.png" alt="Building Company">
+        <img src="assets/icons/icon-3.png" alt="Property">
+        <img src="assets/icons/icon-4.png" alt="Elite Property">
+      </div>
+    </div>
+  </div>
+  <!-- -------------------Our Partner section end here------------->
+
+  <!-- -------------------Footer section end here------------------>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Address: 44 New Design Street</p>
+        <p><i class="fas fa-envelope"></i> Email: mkeghtorgaiver@mail.com</p>
+        <p><i class="fas fa-phone-alt"></i> Phone: +234-8084701598</p>
+        <p><i class="fas fa-fax"></i> Fax: +0477 85X6 552</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Booking</h3>
+        <ul>
+          <li><a href="#">Rooms & Suites</a></li>
+          <li><a href="#">Restaurant</a></li>
+          <li><a href="#">Hotel</a></li>
+          <li><a href="#">Our Facilities</a></li>
+          <li><a href="#">Rooms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog & Events</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to receive updates, promotions, and news.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Iver Moses Design. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- -------------------Footer section end here----------------->
+
+  <script src="js/scripts.js"></script>
+  </body>
+</html>

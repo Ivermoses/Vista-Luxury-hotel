@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Booking System</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">VISTA LUXE</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Index</a></li>
+        <li class="dropdown">
+          <a href="#">Rooms <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="single-room.html">Single Room</a></li>
+            <li><a href="double-room.html">Double Room</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Pages <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking-system.html">Booking system</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Blog <i class="fas fa-chevron-down"></i>
+          </i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Latest Posts</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="booking-system.html" id="btn" class="btn">Booking System</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!----------------------Banner style section  start here---------->
+  <style>
+    .banner-2 {
+      position: relative;
+      background: url('assets/img/banner.jpg') no-repeat center center/cover;
+      background-position: center;
+      background-size: cover;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      color: var(--white);
+      padding: 40px;
+    }
+
+    .overlay-2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.877);
+    }
+
+    .banner-content-2 {
+      z-index: 2;
+      text-align: center;
+    }
+
+    .banner-content-2 h1 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .banner-content-2 p {
+      font-size: 18px;
+      margin: 20px;
+    }
+    
+  </style>
+  <!----------------------Banner style section  ends here------------------------------->
+
+  <!----------------------Banner section  start here------------------------------->
+  <main class="banner-2">
+    <div class="overlay-2"></div>
+      <div class="banner-content-2">
+        <h1>Welcome To VISTA LUXE Hotel</h1>
+        <p>"Capture unforgettable moments at VISTA LUXE Hotel with stunning night views."</p>
+      </div>
+    </div>
+  </main>
+  <!----------------------Banner section  ends here------------------------------->
+
+ <!-- --------------------our best rooms section  start here------------------------------->
+
+  <section class="section">
+
+    <!-- Accordion Header Section -->
+    <div class="accordion-container">
+      <div class="accordion-step active" data-step="1">
+        <div class="icon-container">
+          <i class="fas fa-bed"></i>
+        </div>
+        <p>Select Room</p>
+      </div>
+      <div class="line"></div>
+      <div class="accordion-step" data-step="2">
+        <div class="icon-container">
+          <i class="fas fa-user"></i>
+        </div>
+        <p>Personal Info</p>
+      </div>
+      <div class="line"></div>
+      <div class="accordion-step" data-step="3">
+        <div class="icon-container">
+          <i class="fas fa-credit-card"></i>
+        </div>
+        <p>Payment Info</p>
+      </div>
+      <div class="line"></div>
+      <div class="accordion-step" data-step="4">
+        <div class="icon-container">
+          <i class="fas fa-check-circle"></i>      
+        </div>
+        <p>Review</p>
+      </div>
+    </div>
+
+    <style>
+      .accordion-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 2.5rem;
+      }
+      
+      .accordion-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+      }
+      
+      .accordion-step .icon-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background-color: var(--icon-color);
+        border-radius: 50%;
+        color: white;
+        font-size: 32px;
+      }
+      
+      .accordion-step p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #333;
+      }
+      
+      .line {
+        width: 100px;
+        height: 2px;
+        background-color: #e0e0e0;
+      }
+      
+      .active .icon-container {
+        background-color: var(--icon-color);
+      }
+      
+      .step-content.active {
+        display: block;
+      }
+   
+      .book-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      
+      .available-rooms {
+        display: flex;
+        gap: 20px;
+      }
+  
+      .search-form-2 {
+        background-color: var(--white);
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 2;
+        width: 400px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      .search-form-2 h3 {
+        margin-bottom: 20px;
+        color: var(--p-text);
+        font-weight: bold;
+        text-align: center;
+      }
+  
+      .search-form-2 span {
+        color: var(--icon-color);
+      }
+  
+      .search-form-2 form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      .search-form-2 input, .search-form-2 select {
+        padding: 15px;
+        font-size: 16px;
+        border: 1px solid var(--p-text);
+        border-radius: 6px;
+        width: 100%;
+      }
+   
+      .rooms-container-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 auto;
+        max-width: 700px;
+      }
+  
+      .amenities-2 {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 45px;
+        row-gap: 20px;
+      }
+  
+      .available-rooms  {
+        margin-bottom: 2rem;
+      }
+  
+      .next-step {
+        background-color: var(--icon-color);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin-top: 20px;
+      }
+  
+      .next-step a {
+        text-decoration: none;
+        color: var(--white);
+      }
+      
+      /* Media Queries */
+      @media (max-width: 768px) {
+        .accordion-container {
+          display: flex;
+        }
+      
+        .line {
+          display: none;
+        }
+      
+        .available-rooms .room {
+          flex: 1 1 100%;
+        }
+  
+        .book-content {
+          flex-direction: column;
+        }
+  
+        .rooms-container-2 {
+          max-width: 100%;
+        }
+  
+        .search-form-2 {
+          width: 100%; 
+        }
+
+        
+        .rooms-container-2 {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+        }
+
+        .box {
+          display: flex;
+        }
+
+        .accordion-step .icon-container {
+          width: 50px;
+          height: 50px;
+          border-radius: 0;
+          font-size: 22px;
+        }
+
+          .accordion-step p {
+          font-size: 12px;
+        }
+
+        }
+
+        @media (max-width: 428px) {
+        .accordion-step .icon-container {
+          width: 40px;
+          height: 40px;
+          font-size: 22px;
+          border-radius: 0;
+          justify-content: center;
+        }
+        
+        .rooms-container-2 {
+         display: grid;
+        }
+
+        .banner-content-2 h1 {
+         font-size: 1.5rem;
+        }  
+      }
+    </style>
+    <!-- Accordion Header Section -->
+
+    <!-- Step 1: Room Selection -->
+    <div class="step-content active" id="step-1">
+      <div class="book-content">
+        <!-- Search Form -->
+        <div class="search">
+          <h3>Search Your <span>Rooms</span></h3>
+            <div class="search-form-2">
+             
+              <form>
+                <input type="date" placeholder="Check In" required>
+                <input type="date" placeholder="Check Out" required>
+                <select required>
+                  <option value="" disabled selected>Room</option>
+                  <option value="standard">Standard Room</option>
+                  <option value="deluxe">Deluxe Room</option>
+                  <option value="suite">Suite</option>
+                </select>
+                <select required>
+                  <option value="" disabled selected>Adult</option>
+                  <option value="1">1 Adult</option>
+                  <option value="2">2 Adults</option>
+                </select>
+                <select required>
+                  <option value="" disabled selected>Child</option>
+                  <option value="0">No Children</option>
+                  <option value="1">1 Child</option>
+                  <option value="2">2 Children</option>
+                </select>
+                <button type="submit" class="btn-search">Search</button>
+              </form>
+            </div>
+        </div>
+        <!--available rooms-->
+        <div class="available">
+          <h3>Available Rooms</h3>
+          <div class="available-rooms">
+            <div class="rooms-container-2">
+              <div class="room-card smart">
+                <img src="assets/img/img-1.jpg" alt="Luxury Room" class="room-image">
+                <div class="room-details">
+                  <div class="room-det">
+                    <h3>Single Room</h3>
+                    <div class="price">$567.99/Night</div>
+                  </div>
+                  <p><i class="fas fa-map-marker-alt"></i> 123 Kathal St. Tampa City</p>
+                    <div class="amenities-2">
+                      <span><i class="fa fa-bed"></i> Beds</span>
+                      <span><i class="fas fa-phone"></i> Phone</span>
+                      <span><i class="fa fa-television"></i> TV</span>
+                      <span><i class="fa fa-car"></i> Parking</span>
+                      <span><i class="fa fa-dumbbell"></i> GYM</span>
+                      <span><i class="fa fa-wifi"></i> Wi-fi</span>
+                    </div>
+                </div>
+              </div>
+              <div class="room-card smart">
+                <img src="assets/img/img-2.jpg" alt="Double Room" class="room-image">
+                <div class="room-details">
+                  <div class="room-det">
+                    <h3>Double Room</h3>
+                    <div class="price">$567.99/Night</div>
+                  </div>
+                  <p><i class="fas fa-map-marker-alt"></i> 123 Kathal St. Tampa City</p>
+                    <div class="amenities-2">
+                      <span><i class="fa fa-bed"></i> Beds</span>
+                      <span><i class="fas fa-phone"></i> Phone</span>
+                      <span><i class="fa fa-television"></i> TV</span>
+                      <span><i class="fa fa-car"></i> Parking</span>
+                      <span><i class="fa fa-dumbbell"></i> GYM</span>
+                      <span><i class="fa fa-wifi"></i> Wi-fi</span>
+                    </div>
+                </div>
+              </div>
+        
+              <div class="room-card smart">
+                <img src="assets/img/img-3.jpg" alt="Single Room" class="room-image">
+                <div class="room-details">
+                  <div class="room-det">
+                    <h3>Single Room</h3>
+                    <div class="price">$567.99/Night</div>
+                  </div>
+                  <p><i class="fas fa-map-marker-alt"></i></i> 123 Kathal St. Tampa City</p>
+                    <div class="amenities-2">
+                      <span><i class="fa fa-bed"></i> Beds</span>
+                      <span><i class="fas fa-phone"></i> Phone</span>
+                      <span><i class="fa fa-television"></i> TV</span>
+                      <span><i class="fa fa-car"></i> Parking</span>
+                      <span><i class="fa fa-dumbbell"></i> GYM</span>
+                      <span><i class="fa fa-wifi"></i> Wi-fi</span>
+                    </div>
+                </div>
+              </div>
+        
+              <div class="room-card smart">
+                <img src="assets/img/img-5.jpg" alt="Double Room" class="room-image">
+                <div class="room-details">
+                  <div class="room-det">
+                    <h3>Double Room</h3>
+                    <div class="price">$567.99/Night</div>
+                  </div>
+                  <p><i class="fas fa-map-marker-alt"></i> 123 Kathal St. Tampa City</p>
+                  <div class="amenities-2">
+                    <span><i class="fa fa-bed"></i> Beds</span>
+                    <span><i class="fas fa-phone"></i> Phone</span>
+                    <span><i class="fa fa-television"></i> TV</span>
+                    <span><i class="fa fa-car"></i> Parking</span>
+                    <span><i class="fa fa-dumbbell"></i> GYM</span>
+                    <span><i class="fa fa-wifi"></i> Wi-fi</span>
+                  </div>
+                </div>
+              </div>
+              <button class="next-step"><a href="#">Save And Continue</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Step 2: Personal Info (Hidden by default) -->
+    <div class="step-content" id="step-2">
+      <div class="concert">
+        <h3>Personal Info</h3>
+        <h3>Booking Details</h3>
+      </div>
+      <div class="personal-info-container"> 
+        <div class="personal-info-form">
+          <h4>Personal Info</h4>
+          <div class="form-group">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Address Line 1" required>
+            <input type="text" placeholder="Address Line 2">
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Zip/Post Code" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="State/Region" required>
+            <select>
+              <option value="" disabled selected>Country</option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="us">United Emirates</option>
+              <option value="ca">America</option>
+              <option value="us">United Kingdom</option>
+              <option value="ca">Brazil</option>
+              <option value="us">Australia</option>
+              <option value="ca">Spain</option>
+              <option value="us">Nigeria</option>
+              <option value="ca">South Africa</option>
+              <option value="us">Ghana</option>
+              <option value="ca">Egypt</option>
+              <option value="us">Lybia</option>
+              <option value="ca">Algeria</option>
+            </select>
+          </div>
+          <h4>Account Info</h4>
+          <div class="form-group">
+            <input type="text" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="comfirm Password" required>
+          </div>
+          <div class="form-group checkbox">
+            <label>By signing up you agree with our terms and conditions</label>
+          </div>
+        </div>
+
+        <!-- Booking Details with Image Slider -->
+          <div class="booking-details">
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slider-item">
+                  <img src="assets/img/img-1.jpg" alt="Luxury Room Image 1">
+                </div>
+                <div class="slider-item">
+                  <img src="assets/img/img-4.jpg" alt="Luxury Room Image 2">
+                </div>
+                <div class="slider-item">
+                  <img src="assets/img/img-4.jpg" alt="Luxury Room Image 3">
+                </div>
+                <div class="slider-item">
+                  <img src="assets/img/img-1.jpg" alt="Luxury Room Image 4">
+                </div>
+                <div class="slider-item">
+                  <img src="assets/img/img-4.jpg" alt="Luxury Room Image 5">
+                </div>
+                <div class="slider-item">
+                  <img src="assets/img/img-4.jpg" alt="Luxury Room Image 6">
+                </div>
+              </div>
+
+              <div class="title">
+                <h3>Luxury Room</h3>
+              </div>
+
+              <div class="paragraph">
+                <p>Check in: October 28, 2021</p>
+                <p>Check out: October 29, 2021</p>
+                <p>Rooms: 3</p>
+                <p>Adults: 2</p>
+                <p>Child: 1</p>
+              </div>
+
+              <div class="price"></div>
+                <h4>Total: $317.99</h4>
+              </div>
+            </div>
+          </div>
+        <button class="next-step">Save And Continue</button>
+      </div> 
+    </div>
+  
+    <style>
+
+      :root{
+        --icon-color: #f4a460;
+        --hover-color: #a7613e;
+        /* --box-shadow-root: 0px 0px  0px 4px rgb(245, 245, 245); */
+        --box-shadow-root: 0 2px 5px rgba(0,0,0,0.1);
+        --milk-white: #fbfbfb;
+        --footer-color: #021e40;
+        --footer-icon: #0f294a;
+        --text-color: #212121;
+        --black-color: #000;
+        --white: #ffffff;
+        --p-text: #5a5959;
+        --max-width: 1200px;
+        --header-font: "Plyfair Display,"serif;
+      }
+
+      .step-content {
+        display: none;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .step-content h3 {
+        padding-bottom: 1.2rem;
+      }
+
+      .concert {
+        display: flex;
+        justify-content: space-between;
+        
+      }
+
+      .step-content.active {
+        display: block;
+      }
+      
+      .personal-info-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .personal-info-form, .booking-details {
+        flex: 2;
+        background-color: var(--white);
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .personal-info-form h4 {
+        margin-bottom: 20px;
+        color: #f79648;
+      }
+      
+      .form-group {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 15px;
+      }
+      
+      .form-group input, .form-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .form-group.checkbox {
+        margin-bottom: 30px;
+      }
+      
+      .form-group.checkbox input {
+        margin-right: 10px;
+      }
+
+      /* Adjust the layout */
+      .personal-info-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .personal-info-container .form-section {
+        flex: 2; 
+      }
+
+      .personal-info-container .booking-details {
+        flex: 1;
+      }
+
+      .form-section {
+        background-color: var(--white);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+      }
+
+      .booking-details {
+        background-color: var(--white);
+        padding: 20px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+        .personal-info-container {
+          flex-direction: column;
+        }
+
+        .form-section {
+          width: 100%;
+        }
+
+        .booking-details {
+          width: 100%;
+        }
+      }
+
+      
+
+      /* update bookings details */
+      
+      .booking-details .slider-container {
+        position: relative;
+        width: 100%;
+      }
+
+      .title {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .paragraph {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+
+      .price h4{
+        font-size: 2rem;
+        padding: 1rem 0;
+      }
+
+      .booking-details .slider {
+        display: flex;
+        overflow: hidden;
+      }
+      
+      .booking-details .slider-item {
+        min-width: 100%;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      /* update bookings details */
+      .booking-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: var(--white);
+      }
+      
+      .booking-details img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      
+      .booking-details p {
+        margin: 5px 0;
+        font-size: 1rem;
+        color: #333;
+      }
+      
+      /* Media Queries */
+      @media (max-width: 768px) {
+        .personal-info-container {
+          flex-direction: column;
+        }
+      
+        .form-group {
+          flex-direction: column;
+        }
+      }
+      
+    </style>
+
+    <!-- Step 3: Payment Info (Hidden by default) -->
+    <div class="step-content" id="step-3">
+      <h3>Payment Info</h3>
+      <div class="payment-info-container">
+        <div class="form-section-1">
+            <h3>Billing Address</h3>
+            <div class="form-group-1">
+              <div>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="First Name">
+              </div>
+              <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last Name">
+              </div>
+            </div>
+        
+            <div class="form-group-1">
+              <div>
+                <label for="address-line-1">Address Line 1</label>
+                <input type="text" id="address-line-1" placeholder="Address Line 1">
+              </div>
+              <div>
+                <label for="address-line-2">Address Line 2</label>
+                <input type="text" id="address-line-2" placeholder="Address Line 2">
+              </div>
+            </div>
+        
+            <div class="form-group-1">
+              <div>
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City">
+              </div>
+              <div>
+                <label for="zip-code">Zip/Post Code</label>
+                <input type="text" id="zip-code" placeholder="Zip/Post Code">
+              </div>
+            </div>
+        
+            <div class="form-group-1">
+              <div>
+                <label for="state-region">State/Region</label>
+                <input type="text" id="state-region" placeholder="State/Region">
+              </div>
+              <div>
+                <label for="country">Country</label>
+                <input type="text" id="country" placeholder="Country">
+              </div>
+            </div>
+        
+            <h3>Card Info</h3>
+            <div class="form-group-1">
+              <div>
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="Card Number">
+              </div>
+              <div>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="CVV">
+              </div>
+            </div>
+        
+            <div class="form-group-1">
+              <div>
+                <label for="expire-month">Expire Month</label>
+                <input type="text" id="expire-month" placeholder="Month">
+              </div>
+              <div>
+                <label for="expire-year">Expire Year</label>
+                <input type="text" id="expire-year" placeholder="Year">
+              </div>
+            </div>
+        </div>
+
+        <div class="booking-details-1">
+          <h3>Booking Details</h3>
+          <div class="slider-container-1">
+            <div class="slider-1">
+              <div class="slider-item-1">
+                <img src="assets/img/img-1.jpg" alt="Room Image 1">
+              </div>
+              <div class="slider-item-1">
+                <img src="assets/img/img-2.jpg" alt="Room Image 2">
+              </div>
+              <div class="slider-item-1">
+                <img src="assets/img/img-3.jpg" alt="Room Image 3">
+              </div>
+            </div>
+            <div class="slider-nav">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="title">
+            <h3>Luxury Room</h3>
+          </div>
+
+          <div class="paragraph">
+            <p>Check in: October 28, 2021</p>
+            <p>Check out: October 29, 2021</p>
+            <p>Rooms: 3</p>
+            <p>Adults: 2</p>
+            <p>Child: 1</p>
+          </div>
+          <p>Your Address: John Maikel, Level 13, 2 Elizabeth St., Melbourne, Victoria 3000</p>
+          <div class="price"></div>
+            <h4>Total: $317.99</h4>
+        </div>
+      </div>
+      <button class="next-step">Next</button>
+    </div>
+    <!-- payment-info-container style start here -->
+    <style>
+    .payment-info-container {
+      display: flex;
+      gap: 20px;
+      padding: 20px 0;
+    }
+    
+    /* Form section styling */
+    .form-section-1 {
+      flex: 2;
+      background-color: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form-section-1 h3 {
+      margin-bottom: 20px;
+      color: #333;
+      font-size: 20px;
+    }
+    
+    .form-group-1 {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .form-group-1 div {
+      flex: 1;
+    }
+    
+    .form-section-1 label {
+      display: block;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    
+    .form-section-1 input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #333;
+      box-sizing: border-box;
+    }
+    
+    /* Booking details section */
+    .booking-details-1 {
+      flex: 1;
+      background-color: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    .booking-details-1 img {
+      width: 100%;
+      object-fit: cover;
+    }
+    
+    /* Slider Container */
+  .slider-container-1 {
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    max-width: 100%; 
+  }
+
+  /* Slider */
+  .slider-1 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Slider Item */
+  .slider-item-1 {
+    min-width: 100%;
+    flex-shrink: 0;
+  }
+
+  /* Ensure the images fit properly */
+  .slider-item-1 img {
+    width: 100%;
+    height: 300px;
+    display: block; 
+    object-fit: cover;
+  }
+
+    .slider-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 4px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .dot.active {
+      background-color: #ff6600;
+    }
+    
+    /* Media Queries for responsive design */
+    @media (max-width: 768px) {
+      .payment-info-container {
+        flex-direction: column;
+      }
+    
+      .form-section-1,
+      .booking-details-1 {
+        width: 100%;
+      }
+    
+      .form-group-1 {
+        flex-direction: column;
+      }
+    }
+    
+    </style>
+   <!-- payment-info-container end here -->
+
+    <!-- payment-info-container js start here -->
+    <script>
+    const slider = document.querySelector('.slider-1');
+  const dots = document.querySelectorAll('.dot');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const slideWidth = slider.querySelector('.slider-item-1').clientWidth;
+    slider.style.transform = `translateX(-${index * slideWidth}px)`;
+    
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  function autoSlide() {
+    currentIndex = (currentIndex + 1) % dots.length;
+    showSlide(currentIndex);
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      currentIndex = index;
+      showSlide(index);
+    });
+  });
+
+  setInterval(autoSlide, 3000); // Slide every 3 seconds
+
+  showSlide();
+continueAutoSlide();
+
+    </script>
+    <!-- payment-info-container js start here -->
+
+    <!-- Step 4: Review (Hidden by default) -->
+    <div class="step-content" id="step-4">
+      <div class="your-review">
+      <h3>Review Your Details</h3>
+      </div>
+      <div class="booking-detail">
+        <div class="image-slider">
+          <div class="slides">
+            <img src="assets/img/img-4.jpg" alt="Room Image 1" class="slide active">
+            <img src="assets/img/img-5.jpg" alt="Room Image 2" class="slide">
+            <img src="assets/img/img-6.jpg" alt="Room Image 3" class="slide">
+          </div>
+          <div class="dotes">
+            <span class="dote active" onclick="currentSlide(1)"></span>
+            <span class="dote" onclick="currentSlide(2)"></span>
+            <span class="dote" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+        <div class="detail">
+          <h4>Your Payment ID: #40211229</h4>
+          <div class="border"></div>
+          <ul>
+            <li><strong>Check-in:</strong> October 28, 2021</li>
+            <li><strong>Check-out:</strong> October 29, 2021</li>
+            <li><strong>Adults:</strong> 2</li>
+            <li><strong>Child:</strong> 1</li>
+            <div class="border"></div>
+            <li><strong>Your Address:</strong> John Mikel, Level 13, 2 Elizabeth St, Melbourne Victoria 3000</li>
+            <div class="border"></div>
+            <li class="font-size: 22px"><span style="font-size: 20px;">Total: $317.99</span> </li>
+          </ul>
+        </div>
+      </div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore vero quaerat commodi sunt nisi corporis suscipit ea. Voluptates asperiores porro, repudiandae quia aperiam facere explicabo omnis alias sed, minus quidem nihil ex unde eveniet illo ratione quisquam officia fuga. Est excepturi, amet dolor quos autem quas corrupti voluptas laborum? Reiciendis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa amet magni hic delectus eaque temporibus, quasi reiciendis voluptates! Amet molestias eos perferendis cumque reprehenderit? Sequi, nulla et dolores ad fuga voluptates, aliquid eaque exercitationem dolorum rem inventore debitis repudiandae! Amet delectus distinctio molestias! Obcaecati, ipsa expedita? Sed, nam? Sapiente, quod corrupti ullam libero hic vero repellendus deserunt aliquid distinctio quae consequuntur beatae! Dolore, iste aperiam. Et eligendi repudiandae fugit laborum provident asperiores deserunt, nam autem molestiae, iste facere dolorum omnis animi modi error doloribus. Harum voluptate numquam, quisquam reprehenderit eveniet alias? Eos obcaecati quod eligendi cum iste incidunt doloribus ipsa.
+      <button class="next-step">Confirm</button>
+      <!-- Review Your Details style start-->
+      <style>
+        .booking-detail {
+          display: flex;
+          margin: 50px auto;
+          width: 100%;
+          max-width: 1200px;
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-slider {
+          width: 50%;
+          position: relative;
+        }
+        
+        .slidess {
+          position: relative;
+          width: 100%;
+          object-fit: cover;
+        }
+        
+        .slide {
+          display: none;
+          width: 100%;
+        }
+        
+        .slide.active {
+          display: block;
+        }
+        
+        .dotes {
+          text-align: center;
+          position: absolute;
+          bottom: 10px;
+          width: 100%;
+        }
+        
+        .dote {
+          height: 15px;
+          width: 15px;
+          margin: 0 5px;
+          background-color: #ddd;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+          cursor: pointer;
+        }
+        
+        .dote.active {
+          background-color: #ff5722;
+        }
+        
+        .detail {
+          width: 50%;
+          padding: 20px;
+        }
+        
+        .detail h4 {
+          font-size: 2rem;
+
+        }
+
+        .your-review {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+
+        .border { 
+          border: 1px solid #ddd;
+          margin-bottom: 2rem;;
+        }
+        
+        .detail ul {
+          list-style: none;
+          margin-bottom: 20px;
+        }
+        
+        .detail ul li {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+        
+        .confirm-btn {
+          padding: 15px 30px;
+          background-color: var(--icon-color);
+          color: var(--white);
+          border: none;
+          border-radius: 5px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        
+        .confirm-btn:hover {
+          background-color: var(--hover-color);
+        }
+        
+        /* Media Query */
+        @media (max-width: 768px) {
+          .booking-detail {
+            flex-direction: column;
+          }
+        
+          .image-slider, .details {
+            width: 100%;
+          }
+        }
+      </style>
+      <!-- Review Your Details style end-->
+
+      <!-- Review Your Details js start-->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    let currentIndex = 0;
+
+    const dotes = document.querySelectorAll('.dote');
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        dotes[i].classList.remove('active');
+      });
+      
+      slides[index].classList.add('active');
+      dotes[index].classList.add('active');
+    }
+
+    // Initial call to set up the first slide
+    showSlide(currentIndex);
+
+    // Example: Change slide every 5 seconds
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }, 5000);
+    });
+      </script>
+      <!-- Review Your Details js end-->
+    </div>
+  </section>
+
+ <!-- --------------------our best rooms section  ends here------------------------------->
+
+<!-- -------------------Our Partners section end here----------------------->
+<div class="partners-section">
+  <div class="partners-content">
+    <h2>Our Partners</h2>
+    <p>We proudly collaborate with a network of trusted partners who help us deliver exceptional value and quality. Their expertise and support play a key role in our shared success, ensuring that we continue to meet the highest standards in everything we do.</p>
+  </div>
+  <div class="partners-logos">
+    <div class="logo-container">
+      <img src="assets/icons/icon-4.png" alt="Elite Property">
+      <img src="assets/icons/icon-3.png" alt="Building Company">
+      <img src="assets/icons/icon-2.png" alt="Property">
+      <img src="assets/icons/icon-4.png" alt="Elite Property">
+      <img src="assets/icons/icon-3.png" alt="Building Company">
+      <img src="assets/icons/icon-2.png" alt="Property">
+    </div>
+  </div>
+</div>
+
+<!-- -------------------Our Partner section end here----------------------->
+<!-- -------------------Footer section end here----------------------->
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Address: 44 New Design Street</p>
+      <p><i class="fas fa-envelope"></i> Email: mkeghtorgaiver@mail.com</p>
+      <p><i class="fas fa-phone-alt"></i> Phone: +234-8084701598</p>
+      <p><i class="fas fa-fax"></i> Fax: +0477 85X6 552</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Booking</h3>
+      <ul>
+        <li><a href="#">Rooms & Suites</a></li>
+        <li><a href="#">Restaurant</a></li>
+        <li><a href="#">Hotel</a></li>
+        <li><a href="#">Our Facilities</a></li>
+        <li><a href="#">Rooms</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>About</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog & Events</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column newsletter">
+      <h3>Newsletter</h3>
+      <p>Subscribe to receive updates, promotions, and news.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your Email">
+        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Iver Moses Design. All Rights Reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-pinterest"></i></a>
+      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+<!-- -------------------Footer section end here----------------------->
+
+<!-- First slider js code wrapped -->
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+    let currentStep = 2;
+    let currentSlide = 0;
+    let slideInterval;
+
+    
+// Function to change steps in accordion
+document.querySelectorAll('.next-step').forEach(button => {
+  button.addEventListener('click', () => {
+    if (currentStep < 4) {
+      currentStep++;
+      goToStep(currentStep);
+    }
+  });
+});
+
+function goToStep(step) {
+  document.querySelectorAll('.step-content').forEach(content => {
+    content.classList.remove('active');
+  });
+  document.getElementById(`step-${step}`).classList.add('active');
+}
+
+// Slider functionality
+const slides = document.querySelectorAll('.slider-item');
+const totalSlides = slides.length;
+
+// Function to show the current slide
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(${(i - index) * 100}%)`;
+  });
+  currentSlide = index;
+}
+
+// Function to automatically slide to the next image
+function autoSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides; // Loop back to the first slide after the last
+  showSlide(currentSlide);
+}
+
+// Start automatic sliding
+function startAutoSlide() {
+  slideInterval = setInterval(autoSlide, 3000); // Change image every 3 seconds
+}
+
+// Initialize the slider to show the first slide
+showSlide(0);
+startAutoSlide();
+
+});
+
+
+  </script>
+<!-- First slider js code wrapped -->
+
+ <!-- Accordion button  js code wrapped --> 
+<script>
+  let currentStep = 1;
+
+document.querySelectorAll('.accordion-step').forEach(step => {
+ step.addEventListener('click', () => {
+   const stepNumber = parseInt(step.getAttribute('data-step'));
+   goToStep(stepNumber);
+ });
+});
+
+document.querySelectorAll('.next-step').forEach(button => {
+ button.addEventListener('click', () => {
+   if (currentStep < 4) {
+     currentStep++;
+     goToStep(currentStep);
+   }
+ });
+});
+
+function goToStep(step) {
+ document.querySelectorAll('.accordion-step').forEach((stepEl, index) => {
+   if (index < step) {
+     stepEl.classList.add('active');
+   } else {
+     stepEl.classList.remove('active');
+   }
+ });
+
+ document.querySelectorAll('.step-content').forEach(content => {
+   content.classList.remove('active');
+ });
+ document.getElementById(`step-${step}`).classList.add('active');
+}
+
+ </script>
+ <!-- Accordion button  js code wrapped --> 
+<script src="js/scripts.js"></script>
+  </body>
+</html>

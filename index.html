@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>VISTA LUXE Hotel</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">VISTA LUXE</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Index</a></li>
+        <li class="dropdown">
+          <a href="#">Rooms <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="single-room.html">Single Room</a></li>
+            <li><a href="double-room.html">Double Room</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Pages <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking-system.html">Booking System</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Blog <i class="fas fa-chevron-down"></i>
+          </i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Latest Posts</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="booking-system.html" id="btn" class="btn">Booking System</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!---------------------- Banner section  start here ----------------->
+  <main class="banner">
+    <div class="overlay"></div>
+    <div class="banner-content slide-left">
+      <h1>Welcome To VISTA LUXE Hotel</h1>
+      <p>"Capture unforgettable moments at VISTA LUXE Hotel with stunning night views."</p>
+      <a href="signup.html" class="btn-primary">Get Started Now</a>
+    </div>
+
+    <!-- Search Form -->
+    <div class="search-form slide-right">
+      <h3>Search Your <span>Rooms</span></h3>
+      <form>
+        <input type="date" placeholder="Check In" required>
+        <input type="date" placeholder="Check Out" required>
+        <select required>
+          <option value="" disabled selected>Room</option>
+          <option value="standard">Standard Room</option>
+          <option value="deluxe">Deluxe Room</option>
+          <option value="suite">Suite</option>
+        </select>
+        <select required>
+          <option value="" disabled selected>Adult</option>
+          <option value="1">1 Adult</option>
+          <option value="2">2 Adults</option>
+        </select>
+        <select required>
+          <option value="" disabled selected>Child</option>
+          <option value="0">No Children</option>
+          <option value="1">1 Child</option>
+          <option value="2">2 Children</option>
+        </select>
+        <button type="submit" class="btn-search">Search</button>
+      </form>
+    </div>
+  </main>
+  <!---------------------- Banner section  ends here  ------------------>
+
+  <!---------------------- about us section  start here --------------->
+  <div class="about">
+    <section class="section">
+      <div class="container">
+        <div class="content-1">
+          <div class="image-section slide-left">
+            <img src="assets/img/img_4.jpg" alt="Team Photo" class="team-image">   
+            <img src="assets/img/img_5.jpg" alt="Teamwork" class="teamwork-image">
+            <div class="experience-box">
+              <span>45</span>
+              <p>Years of Experience</p>
+            </div>
+          </div>
+
+          <div class="text-section slide-right">
+            <h4>Hotel Bayview</h4>
+            <h1>Welcome To HotelVISTA LUXE</h1>
+            <ul class="features">
+              <li>
+                <div class="tag">
+                  <i class="fa-solid fa-bed"></i>
+                </div>
+                <div class="tag-details">
+                  <h3>Compact and Comfortable Rooms</h3>
+                <p>Our compact rooms maximize space efficiency without sacrificing comfort. Clever design elements and multifunctional furniture create a cozy atmosphere. Experience the perfect balance of functionality and relaxation in our thoughtfully crafted accommodations.</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="tag">
+                  <i class="fa-solid fa-tag"></i>
+                </div>
+                <div class="tag-details">
+                  <h3>Friendly Fair Prices and Service</h3>
+                  <p>Our business prioritizes customer satisfaction through friendly interactions and fair pricing. We believe in transparent, competitive rates coupled with exceptional service. Our goal is to build lasting relationships by providing value and treating customers with respect.</p>
+                </div>
+              </li>
+
+              <li>
+                <div class="tag">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="tag-details">
+                <h3>Public Safety and 24/7 Security</h3>
+                <p>Effective public safety and round-the-clock security measures are essential for protecting communities. They involve law enforcement, surveillance systems, emergency response teams, and community engagement to ensure a safe environment for all citizens at all times.</p>
+                </div>
+              </li>
+            </ul>
+            <button class="explore-btn">Explore More</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+  <!---------------------- about us section  ends here  ----------------->
+
+  <!---------------------- our best rooms section  --------------------->
+  <section class="section">
+
+    <main class="rooms-section">
+      <div class="section-header">
+        <h1>Our Best Rooms</h1>
+        <p>"Experience luxury and comfort with our best room selections."</p>
+      </div>
+  
+      <div class="rooms-container ">
+        <div class="room-card smart">
+          <img src="assets/img/img-1.jpg" alt="Luxury Room" class="room-image">
+          <div class="room-details">
+            <div class="room-det">
+              <h3>Single Room</h3>
+              <div class="price">$567.99/Night</div>
+            </div>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Kathal St. Tampa City</p>
+              <div class="amenities">
+                <span><i class="fa fa-bed"></i> Beds</span>
+                <span><i class="fas fa-phone"></i> Phone</span>
+                <span><i class="fa fa-television"></i> TV</span>
+                <span><i class="fa fa-car"></i> Parking</span>
+                <span><i class="fa fa-dumbbell"></i> GYM</span>
+                <span><i class="fa fa-wifi"></i> Wi-fi</span>
+              </div>
+          </div>
+        </div>
+  
+        <div class="room-card smart">
+          <img src="assets/img/img-2.jpg" alt="Double Room" class="room-image">
+          <div class="room-details">
+            <div class="room-det">
+              <h3>Double Room</h3>
+              <div class="price">$567.99/Night</div>
+            </div>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Kathal St. Tampa City</p>
+              <div class="amenities">
+                <span><i class="fa fa-bed"></i> Beds</span>
+                <span><i class="fas fa-phone"></i> Phone</span>
+                <span><i class="fa fa-television"></i> TV</span>
+                <span><i class="fa fa-car"></i> Parking</span>
+                <span><i class="fa fa-dumbbell"></i> GYM</span>
+                <span><i class="fa fa-wifi"></i> Wi-fi</span>
+              </div>
+          </div>
+        </div>
+  
+        <div class="room-card smart">
+          <img src="assets/img/img-3.jpg" alt="Single Room" class="room-image">
+          <div class="room-details">
+            <div class="room-det">
+              <h3>Single Room</h3>
+              <div class="price">$567.99/Night</div>
+            </div>
+            <p><i class="fas fa-map-marker-alt"></i></i> 123 Kathal St. Tampa City</p>
+              <div class="amenities">
+                <span><i class="fa fa-bed"></i> Beds</span>
+                <span><i class="fas fa-phone"></i> Phone</span>
+                <span><i class="fa fa-television"></i> TV</span>
+                <span><i class="fa fa-car"></i> Parking</span>
+                <span><i class="fa fa-dumbbell"></i> GYM</span>
+                <span><i class="fa fa-wifi"></i> Wi-fi</span>
+              </div>
+          </div>
+        </div>
+
+        <div class="room-card smart">
+          <img src="assets/img/img-4.jpg" alt="Luxury Room" class="room-image">
+          <div class="room-details">
+            <div class="room-det">
+              <h3>Luxury Room</h3>
+              <div class="price">$567.99/Night</div>
+            </div>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Kathal St. Tampa City</p>
+            <div class="amenities">
+              <span><i class="fa fa-bed"></i> Beds</span>
+              <span><i class="fas fa-phone"></i> Phone</span>
+              <span><i class="fa fa-television"></i> TV</span>
+              <span><i class="fa fa-car"></i> Parking</span>
+              <span><i class="fa fa-dumbbell"></i> GYM</span>
+              <span><i class="fa fa-wifi"></i> Wi-fi</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="room-card smart">
+          <img src="assets/img/img-5.jpg" alt="Double Room" class="room-image">
+          <div class="room-details">
+            <div class="room-det">
+              <h3>Double Room</h3>
+              <div class="price">$567.99/Night</div>
+            </div>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Kathal St. Tampa City</p>
+              <div class="amenities">
+                <span><i class="fa fa-bed"></i> Beds</span>
+                <span><i class="fas fa-phone"></i> Phone</span>
+                <span><i class="fa fa-television"></i> TV</span>
+                <span><i class="fa fa-car"></i> Parking</span>
+                <span><i class="fa fa-dumbbell"></i> GYM</span>
+                <span><i class="fa fa-wifi"></i> Wi-fi</span>
+              </div>
+          </div>
+        </div>
+  
+        <div class="room-card smart">
+          <img src="assets/img/img-6.jpg" alt="Single Room" class="room-image">
+          <div class="room-details">
+            <div class="room-det">
+              <h3>Single Room</h3>
+              <div class="price">$567.99/Night</div>
+            </div>
+            <p><i class="fas fa-map-marker-alt"></i></i> 123 Kathal St. Tampa City</p>
+              <div class="amenities">
+                <span><i class="fa fa-bed"></i> Beds</span>
+                <span><i class="fas fa-phone"></i> Phone</span>
+                <span><i class="fa fa-television"></i> TV</span>
+                <span><i class="fa fa-car"></i> Parking</span>
+                <span><i class="fa fa-dumbbell"></i> GYM</span>
+                <span><i class="fa fa-wifi"></i> Wi-fi</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <!-- --------------------our best rooms section  ends here--------------->
+
+  <!-- --------------------our facilitiess section  start here--------------->
+  <main class="facilities-section">
+    <section class="section">
+
+      <div class="section-header">
+        <h1>Our Facilities</h1>
+        <p>Our hotel offers luxurious rooms, a state-of-the-art fitness center, an outdoor pool, fine dining restaurants, and modern conference facilities, ensuring a comfortable and enjoyable stay for all guests.</p>
+      </div>
+
+      <div class="facilities-container">
+        <div class="facility smart">
+          <div class="icon-link">
+            <div class="icon"><i class="fa fa-bell"></i></div>
+          </div>
+          <div class="icon-details">
+            <h3><a href="#">24-hour Reception</a></h3>
+            <p>"24-hour reception" refers to a hotel service available around the clock, ensuring guests can check in, check out, or seek assistance at any time, providing convenience and enhanced customer service.</p>
+          </div>
+        </div>
+
+        <div class="facility smart">
+          <div class="icon-link">
+            <div class="icon"><i class="fa fa-concierge-bell"></i></div>
+          </div>
+          <div class="icon-details">
+            <h3><a href="#">Room Service</a></h3>
+            <p>Room service is a hotel service that allows guests to order food, drinks, or other amenities to be delivered directly to their rooms, offering convenience and privacy during their stay.</p>
+          </div>
+        </div>
+
+        <div class="facility smart">
+          <div class="icon-link">
+            <div class="icon"><i class="fa fa-tv"></i></div>
+          </div>
+          <div class="icon-details">
+            <h3><a href="#"><a href="#">Flat Screen TV</a></a></h3>
+            <p>A flat screen TV in a hotel room enhances guest comfort, offering sleek, modern entertainment. With vibrant visuals and space-saving design, it provides a premium viewing experience for relaxation or work.</p>
+          </div>
+        </div>
+
+        <div class="facility smart">
+          <div class="icon-link">
+            <div class="icon"><i class="fa fa-dumbbell"></i></div>
+          </div>
+          <div class="icon-details">
+            <h3><a href="#">Gym</a></h3>
+            <p>A gym in a hotel offers guests a convenient space to maintain their fitness routine while traveling, equipped with exercise machines, weights, and sometimes personal trainers or fitness classes.</p>
+          </div>
+        </div>
+
+        <div class="facility smart">
+          <div class="icon-link">
+            <div class="icon"><i class="fa fa-car"></i></div>
+          </div>
+          <div class="icon-details">
+            <h3><a href="#">Free Parking</a></h3>
+            <p>"Free Parking" refers to a hotel amenity where guests can park their vehicles at no extra charge. It's a convenient benefit, often influencing travelers' decisions when booking accommodations.</p>
+          </div>
+        </div>
+
+        <div class="facility smart">
+          <div class="icon-link">
+            <div class="icon"><i class="fa fa-wifi"></i></div>
+          </div>
+          <div class="icon-details">
+            <h3><a href="#">Free Wi-Fi</a></h3>
+            <p>"Free Wi-Fi" is a highly sought-after amenity in hotels, offering guests easy access to the internet for work, communication, or leisure, enhancing convenience and connectivity during their stay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- --------------------our facilitiess section  end here--------------->
+
+  <!------------Event, popular places and Testimonial section start here----->
+  <section class="section">
+    <div class="container-2">
+      <!-- Recent Events Section -->
+      <aside class="recent-events">
+        <h2>Recent Events</h2>
+        <div class="recent-events-wrapper">
+          <div class="event">
+            <img src="/assets/img/event-1.jpg" alt="Wedding">
+            <div class="event-details">
+              <h4>Wedding David & Karen</h4>
+              <p>$740.00 | <i class="fas fa-calendar"></i> Jan 12, 2021</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="assets/img/event-2.jpg" alt="Pool Party">
+            <div class="event-details">
+              <h4>Pool Party in summer</h4>
+              <p>$740.00 | <i class="fas fa-calendar"></i> Jan 12, 2021</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="assets/img/event-3.jpg" alt="Festival Music">
+            <div class="event-details">
+              <h4>Festival Music Electronic</h4>
+              <p>$740.00 | <i class="fas fa-calendar"></i> Aug 12, 2021</p>
+            </div>
+          </div>
+          <div class="event">
+            <img src="assets/img/event-4.jpg" alt="Alpha Office Events">
+            <div class="event-details">
+              <h4>VISTA LUXE Hotel Office Events</h4>
+              <p>$740.00 | <i class="fas fa-calendar"></i> Feb 12, 2021</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    <!-- Testimonials Section -->
+      <aside class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-container">
+          <div class="testimonial active">
+            <p>"My experience at VISTA LUXE Hotel was absolutely fantastic. From the moment I arrived, I was greeted with warmth and professionalism. The staff went above and beyond to ensure that my stay was comfortable and enjoyable. The hotel’s central location made it easy to explore the nearby attractions, and I appreciated how quiet and relaxing the atmosphere was. Overall, it was a flawless experience, and I can’t recommend VISTA LUXE Hotel enough to anyone looking for a luxurious, convenient, and welcoming stay."
+
+            </p>
+            <div class="client-details">
+              <img src="assets/img/staff-1.jpg" alt="David Jackson">
+              <h4>John R. – New York, NY</h4>
+            </div>
+          </div>
+
+          <div class="testimonial active">
+            <p>"VISTA LUXE Hotel truly surpassed all my expectations. From the smooth check-in process to the friendly and attentive staff, everything about my stay was flawless. The amenities were excellent, and I appreciated the thoughtful touches like fresh towels and complimentary bottled water. The hotel is ideally located close to major attractions, yet it maintains a peaceful and relaxing ambiance. It’s not often that you find a hotel that feels like home, but VISTA LUXE Hotel certainly managed to do just that."
+            </p>
+            <div class="client-details">
+              <img src="assets/img/staff-2.jpg" alt="Jane Doe">
+              <h4>Jane Doe – London, UK</h4>
+            </div>
+          </div>
+
+          <div class="testimonial active">
+            <p>"My stay at VISTA LUXE Hotel was an unforgettable experience. The attention to detail from the staff was exceptional, and they made sure I had everything I needed. I was especially impressed with the modern amenities, from the fast Wi-Fi to the plush bedding that made for an incredibly comfortable sleep. The hotel’s location was perfect for exploring the nearby restaurants and landmarks, yet it still felt like a quiet retreat in the middle of the city. VISTA LUXE Hotel is a true gem, and I’m already planning my next visit."
+            </p>
+            <div class="client-details">
+              <img src="assets/img/staff-3.jpg" alt="John Smith">
+              <h4>Carlos M. – Madrid, Spain</h4>
+            </div>
+          </div>
+        
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </aside>
+
+    <!-- Popular Places Section -->
+      <aside class="popular-places">
+        <h2>Popular Places</h2>
+        <div class="places-container">
+          <div class="place-card active">
+            <img src="assets/img/place-1.jpg" alt="American Buffalo">
+            <div class="place-details">
+              <h4>American Buffalo</h4>
+              <p>Lorem ipsum dolor sit amenities Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis facere, officia modi voluptatum fugit deserunt architecto doloribus a dolores quas expedita, harum esse aspernatur optio, suscipit nisi fugiat iste nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatibus deserunt corporis, laboriosam iusto error quos neque accusamus aperiam, minima quo non dolores dolore praesentium ut culpa sapiente rerum reiciendis!
+              </p>
+              <button class="read-more">Read More</button>
+            </div>
+          </div>
+          <div class="place-card">
+            <img src="assets/img/place-2.jpg" alt="New York">
+            <div class="place-details">
+              <h4>New York</h4>
+              <p>Lorem ipsum dolor sit amenities Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis facere, officia modi voluptatum fugit deserunt architecto doloribus a dolores quas expedita, harum esse aspernatur optio, suscipit nisi fugiat iste nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatibus deserunt corporis, laboriosam iusto error quos neque accusamus aperiam, minima quo non dolores dolore praesentium ut culpa sapiente rerum reiciendis!
+              </p>
+              <button class="read-more">Read More</button>
+            </div>
+          </div>
+          <div class="place-card">
+            <img src="assets/img/place-3.jpg" alt="Paris">
+            <div class="place-details">
+              <h4>Paris</h4>
+              <p>Lorem ipsum dolor sit amenities Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis facere, officia modi voluptatum fugit deserunt architecto doloribus a dolores quas expedita, harum esse aspernatur optio, suscipit nisi fugiat iste nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatibus deserunt corporis, laboriosam iusto error quos neque accusamus aperiam, minima quo non dolores dolore praesentium ut culpa sapiente rerum reiciendis!
+              </p>
+              <button class="read-more">Read More</button>
+            </div>
+          </div>
+          <div class="arrows">
+            <span class="arrow left" onclick="prevPlace()">&#10094;</span>
+            <span class="arrow right" onclick="nextPlace()">&#10095;</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <!---Event, popular places and Testimonial section end here--->
+
+  <!-- -------------------our staff section start here---------------->
+  <div class="staff-section">
+    <section class="section">
+
+      <div class="staff">
+        <h1>Our Staff</h1>
+        <p>"Experience personalized service with our dedicated staff, always ready to make your stay comfortable, memorable, and exceptional."</p>
+    
+        <div class="staff-grid">
+          <div class="staff-card">
+            <div class="staff-image" style="background-image: url('assets/img/staff-1.jpg');"></div>
+            <div class="staff-overlay">
+              <h3 class="staff-name">Shakira Kaisar</h3>
+              <p class="staff-position">Support Manager</p>
+            </div>
+            <div class="staff-hover">
+              <h3>Shakira Kaisar</h3>
+              <p>Welcome to my profile!</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-image" style="background-image: url('assets/img/staff-2.jpg');"></div>
+              <div class="staff-overlay">
+                <h3 class="staff-name">Micheal John</h3>
+                <p class="staff-position">Hotel Manager</p>
+              </div>
+              <div class="staff-hover">
+                <h3>Micheal John</h3>
+                <p>Welcome to my profile!</p>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-image" style="background-image: url('assets/img/staff-3.jpg');"></div>
+            <div class="staff-overlay">
+              <h3 class="staff-name">Hartisona Roy</h3>
+              <p class="staff-position">Hotel supervisor</p>
+            </div>
+            <div class="staff-hover">
+              <h3>Hartisona Roy</h3>
+              <p>Welcome to my profile!</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="staff-card">
+            <div class="staff-image" style="background-image: url('assets/img/staff-4.jpg');"></div>
+            <div class="staff-overlay">
+              <h3 class="staff-name">Karen Paran</h3>
+              <p class="staff-position">Hotel Director</p>
+            </div>
+            <div class="staff-hover">
+              <h3>Karen Paran</h3>
+              <p>Welcome to my profile!</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- -------------------our staff section end here----------------------->
+
+  <!-- -------------------statistic section start here----------------------->
+  <section class="section">
+
+    <div class="container-3">
+      <h2>Hotel Statistics</h2>
+      <p>Welcome to our Hotel Statistics section, designed to provide you with a clear and detailed overview of our hotel's performance. Here, you'll find essential data on occupancy rates, revenue metrics, and guest demographics. This information is shared to offer transparency and give you a better understanding of our operations and success. By showcasing these key statistics, we aim to build trust and confidence, helping you make informed decisions about partnering with us or choosing us for your next stay.</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="number" data-target="1873">0</span>
+          <p>Guest Stay</p>
+        </div>
+        <div class="stat">
+            <span class="number" data-target="2111">0</span>
+            <p>Booked Rooms</p>
+        </div>
+        <div class="stat">
+            <span class="number" data-target="1823">0</span>
+            <p>Member Stay</p>
+        </div>
+        <div class="stat">
+            <span class="number" data-target="1765">0</span>
+            <p>Meals Served</p>
+        </div>
+      </div>
+  </div>
+
+  </section>
+  <!-- -------------------statistic section end here----------------------->
+
+
+  <!-- -------------------Hotel blog section start here----------------------->
+  <div class="blog">
+
+    <section class="secton">
+
+      <main class="blog-section">
+        <h1>Our Blog</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-1.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-4.jpg" alt="Author" class="profile-pic">
+              </div>
+              <div class="date">
+                <span>20th</span>
+                <span>Jul.</span>
+              </div>
+            </div>
+              <div class="card-content">
+                <div class="profile-d">
+                  <p class="author">By: Tanzim</p>
+                  <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+                </div>
+                <h3>Best Night Photo atVISTA LUXE Hotel</h3>
+                <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-2.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-2.jpg" alt="Author" class="profile-pic">
+              </div>
+              <div class="date">
+                <span>25th</span>
+                <span>Aug.</span>
+              </div>
+            </div>
+              <div class="card-content">
+                <div class="profile-d">
+                  <p class="author">By: Tanzim</p>
+                  <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+                </div>
+                <h3>Magic of the night at Alpha Hotel</h3>
+                <p>"Experience the enchanting nightscape at Alpha Hotel, Horizon Inn, and Luna."</p>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-3.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-3.jpg" alt="Author" class="profile-pic">
+              </div>
+                <div class="date">
+                  <span>21st</span>
+                  <span>Sep.</span>
+                </div>
+            </div>
+            <div class="card-content">
+              <div class="profile-d">
+                <p class="author">By: Tanzim</p>
+                <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+              </div>
+              <h3>Best Night Photo at Alpha Hotel</h3>
+              <p>"Experience the enchanting nightscape at Alpha Hotel, Horizon Inn, and Luna."</p>
+            </div>
+          </div>
+        
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-1.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-4.jpg" alt="Author" class="profile-pic">
+              </div>
+              <div class="date">
+                <span>20th</span>
+                <span>Jul.</span>
+              </div>
+            </div>
+              <div class="card-content">
+                <div class="profile-d">
+                  <p class="author">By: Tanzim</p>
+                  <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+                </div>
+                <h3>Best Night Photo at Alpha Hotel</h3>
+                <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-2.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-2.jpg" alt="Author" class="profile-pic">
+              </div>
+              <div class="date">
+                <span>25th</span>
+                <span>Aug.</span>
+              </div>
+            </div>
+              <div class="card-content">
+                <div class="profile-d">
+                  <p class="author">By: Tanzim</p>
+                  <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+                </div>
+                <h3>Magic of the night at Alpha Hotel</h3>
+                <p>"Experience the enchanting nightscape at Alpha Hotel, Horizon Inn, and Luna."</p>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="blog-card">
+            <div class="card-image">
+              <img src="assets/img/blog-3.jpg" alt="Blog Image">
+              <div class="gradient gradient-top-right"></div>
+              <div class="gradient gradient-bottom-left"></div>
+              <div class="profile-hover">
+                <img src="assets/img/staff-3.jpg" alt="Author" class="profile-pic">
+              </div>
+                <div class="date">
+                  <span>21st</span>
+                  <span>Sep.</span>
+                </div>
+            </div>
+            <div class="card-content">
+              <div class="profile-d">
+                <p class="author">By: Tanzim</p>
+                <p class="meta"><i class="fa fa-calendar"></i> 328 <i class="fa fa-comment"></i> 205</p>
+              </div>
+              <h3>Best Night Photo at Alpha Hotel</h3>
+              <p>"Capture unforgettable moments at Alpha Hotel with stunning night views."</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </div>
+  <!-- -------------------Hotel blog section end here----------------------->
+
+  <!-- -------------------Our Partners section end here----------------------->
+  <div class="partners-section">
+    <div class="partners-content">
+      <h2>Our Partners</h2>
+      <p>We proudly collaborate with a network of trusted partners who help us deliver exceptional value and quality. Their expertise and support play a key role in our shared success, ensuring that we continue to meet the highest standards in everything we do.</p>
+    </div>
+    <div class="partners-logos">
+      <div class="logo-container">
+        <img src="assets/icons/icon-1.png" alt="Elite Property">
+        <img src="assets/icons/icon-2.png" alt="Building Company">
+        <img src="assets/icons/icon-3.png" alt="Property">
+        <img src="assets/icons/icon-4.png" alt="Elite Property">
+      </div>
+    </div>
+  </div>
+  <!-- -------------------Our Partner section end here----------------------->
+
+  <!-- -------------------Footer section end here----------------------->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Address: 44 New Design Street</p>
+        <p><i class="fas fa-envelope"></i> Email: mkeghtorgaiver@mail.com</p>
+        <p><i class="fas fa-phone-alt"></i> Phone: +234-8084701598</p>
+        <p><i class="fas fa-fax"></i> Fax: +0477 85X6 552</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Booking</h3>
+        <ul>
+          <li><a href="#">Rooms & Suites</a></li>
+          <li><a href="#">Restaurant</a></li>
+          <li><a href="#">Hotel</a></li>
+          <li><a href="#">Our Facilities</a></li>
+          <li><a href="#">Rooms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog & Events</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to receive updates, promotions, and news.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Iver Moses Design. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- -------------------Footer section end here----------------------->
+
+  <script src="js/scripts.js"></script>
+  </body>
+</html>

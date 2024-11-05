@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Gallery</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">VISTA LUXE</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Index</a></li>
+        <li class="dropdown">
+          <a href="#">Rooms <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="single-room.html">Single Room</a></li>
+            <li><a href="double-room.html">Double Room</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking-system.html">Booking System</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Blog <i class="fas fa-chevron-down"></i></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Latest Posts</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="booking-system.html" id="btn" class="btn">Booking System</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!----------------------Banner style section  start here------------------------------->
+  <style>
+.banner-2 {
+position: relative;
+background: url('assets/img/banner.jpg') no-repeat center center/cover;
+background-position: center;
+background-size: cover;
+height: 70vh;
+display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+color: var(--white);
+padding: 40px;
+}
+
+.overlay-2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.877);
+}
+
+.banner-content-2 {
+z-index: 2;
+text-align: center;
+}
+
+.banner-content-2 h1 {
+text-align: center;
+font-size: 2rem;
+font-weight: bold;
+}
+
+.banner-content-2 p {
+font-size: 18px;
+margin: 20px;
+}
+
+  </style>
+  <!----------------------Banner style section  ends here------------------------------->
+
+  <!----------------------Banner section  start here------------------------------->
+  <main class="banner-2">
+  <div class="overlay-2"></div>
+  <div class="banner-content-2">
+    <h1>Our Gallery</h1>
+    <p>Explore our luxurious hotel rooms, each designed with elegance, comfort, and <br> breathtaking views for an unforgettable stay experience.</p>
+  </div>
+  </div>
+  </main>
+  <!----------------------Banner section  ends here------------------------------->
+
+
+  <section class="section">
+    <main class="gallery-section">
+      <h2>Our Gallery</h2>
+      <p>Explore our luxurious hotel rooms, each designed with elegance, comfort, and <br>
+        breathtaking views for an unforgettable stay experience.</p>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="classic">Classic</button>
+        <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+        <button class="filter-btn" data-filter="royal">Royal</button>
+        <button class="filter-btn" data-filter="luxury">Luxury</button>
+      </div>
+
+      <div class="gallery-container">
+        <div class="gallery-item" data-category="classic">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/luxe-room-1.jpg" alt="Luxury Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Luxury Room</span>
+              <span class="price">$500.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="classic">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/luxe-room-2.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$150.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="classic">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/luxe-room-3.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Royal Room</span>
+              <span class="price">$120.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="classic">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/luxe-room-4.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$180.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="classic">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/double-img.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$250.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="classic">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-6.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$450.00</span>
+            </div>
+          </a>
+        </div>
+        <!--classic blog images ends here-->
+
+        <!--deluxe blog imges start here-->
+        <div class="gallery-item" data-category="deluxe">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-2.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$90.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="deluxe">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-3.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Royal Room</span>
+              <span class="price">$350.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="deluxe">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-4.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$210.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="deluxe">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-5.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$175.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="deluxe">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-6.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$160.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="deluxe">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-1.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$80.00</span>
+            </div>
+          </a>
+        </div>
+
+        <!--royal blog imges start here-->
+        <div class="gallery-item" data-category="royal">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-2.jpg" alt="royal Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$55.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="royal">
+          <a href="read-more.html" class="gallery-link">
+            <img src="assets/img/img-3.jpg" alt="royal Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Royal Room</span>
+              <span class="price">$360.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="royal">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-4.jpg" alt="royal Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Royal Room</span>
+              <span class="price">$190.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="royal">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-5.jpg" alt="royal Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Deluxe Room</span>
+              <span class="price">$71.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="royal">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-6.jpg" alt="royal Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Royal Room</span>
+              <span class="price">$300.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="deluxe">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-1.jpg" alt="Deluxe Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Royal Room</span>
+              <span class="price">$107.00</span>
+            </div>
+          </a>
+        </div>
+
+        <!--Luxury section start here-->
+        <div class="gallery-item" data-category="luxury">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-2.jpg" alt="Luxury Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Luxury Room</span>
+              <span class="price">$123.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="luxury">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-3.jpg" alt="luxury Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Luxury Room</span>
+              <span class="price">$240.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="luxury">
+        <a href="gallery.html" class="gallery-link">
+          <img src="assets/img/img-4.jpg" alt="luxury Room" class="gallery-image">
+          <div class="overlay">
+            <span class="image-title">Luxury Room</span>
+            <span class="price">$170.00</span>
+          </div>
+        </a>
+        </div>
+        <div class="gallery-item" data-category="luxury">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-5.jpg" alt="luxury Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Luxury Room</span>
+              <span class="price">$220.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="luxury">
+          <a href="gallery.html" class="gallery-link">
+            <img src="assets/img/img-6.jpg" alt="luxury Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Luxury Room</span>
+              <span class="price">$205.00</span>
+            </div>
+          </a>
+        </div>
+        <div class="gallery-item" data-category="luxury">
+          <a href="read-more.html" class="gallery-link">
+            <img src="assets/img/img-1.jpg" alt="luxury Room" class="gallery-image">
+            <div class="overlay">
+              <span class="image-title">Luxury Room</span>
+              <span class="price">$320.00</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- galery buttons styles accordion page-->
+  <style>
+
+  :root{
+    --icon-color: #f4a460;
+    --hover-color: #a7613e;
+    --box-shadow-root: 0 2px 5px rgba(0,0,0,0.1);
+    --milk-white: #fbfbfb;
+    --footer-color: #021e40;
+    --footer-icon: #0f294a;
+    --text-color: #212121;
+    --black-color: #000;
+    --white: #ffffff;
+    --p-text: #5a5959;
+    --max-width: 1200px;
+    --header-font: "Plyfair Display,"serif;
+  }
+  
+  .gallery-section {
+  text-align: center;
+  }
+  
+  .gallery-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  }
+  
+  .gallery-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+  }
+  
+  .filter-buttons {
+  margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow-root);
+  color: #333;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  }
+  
+  .filter-btn.active {
+  background-color: var(--icon-color);
+  border-color: var(--icon-color);
+  color: #333;
+  }
+  
+  .filter-btn:hover {
+  background-color: var(--hover-color);
+  }
+  
+  .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  }
+  
+  .gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  }
+  
+  .gallery-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .overlay {
+    flex-direction: column;
+  }
+  
+  .image-title {
+  color: var(--white);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  margin-bottom: 1.2rem;
+  }
+  
+  .gallery-item:hover .gallery-image {
+  transform: scale(1.1);
+  }
+  
+  .gallery-item:hover .overlay {
+  opacity: 1;
+  }
+  
+  .gallery-item:hover .image-title {
+  opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
+  
+  @media (max-width: 576px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+  }
+  
+  </style>
+  <!-- gallery buttons styles accordion page -->
+  
+  <!-- -------------------Our Partners section end here----------------------->
+  <div class="partners-section-2">
+    <h3>Brands $ Partners</h3>
+    <section class="section">
+      <div class="about-partners-logos">
+        <div class="about-logo-container">
+          <img src="assets/icons/icon-1.png" alt="Elite Property">
+          <img src="assets/icons/icon-2.png" alt="Building Company">
+          <img src="assets/icons/icon-3.png" alt="Property">
+          <img src="assets/icons/icon-4.png" alt="Elite Property">
+          <img src="assets/icons/icon-5.png" alt="Elite Property">
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- -------------------Our Partner section end here----------------------->
+
+  <!-- -------------------Footer section end here----------------------->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Address: 44 New Design Street</p>
+        <p><i class="fas fa-envelope"></i> Email: mkeghtorgaiver@mail.com</p>
+        <p><i class="fas fa-phone-alt"></i> Phone: +234-8084701598</p>
+        <p><i class="fas fa-fax"></i> Fax: +0477 85X6 552</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Booking</h3>
+        <ul>
+          <li><a href="#">Rooms & Suites</a></li>
+          <li><a href="#">Restaurant</a></li>
+          <li><a href="#">Hotel</a></li>
+          <li><a href="#">Our Facilities</a></li>
+          <li><a href="#">Rooms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog & Events</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to receive updates, promotions, and news.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Iver Moses Design. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- -------------------Footer section end here----------------------->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filterValue = button.getAttribute('data-filter');
+        filterImages(filterValue);
+    });
+  });
+
+  function filterImages(category) {
+    galleryItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+  }
+  });
+
+  </script>
+  <!-- about us script for statistics -->
+
+  <script src="js/scripts.js"></script>
+  </body>
+</html>

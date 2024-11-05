@@ -1,0 +1,1043 @@
+ /* 1104 screen media for about page */
+ @media screen and (max-width: 1104px) {
+  /* Navigation adjustments */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 20px;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+  }
+  .navbar {
+    padding: 0 2rem;
+  }
+
+  /* Banner section */
+  .banner-2 {
+    padding: 6rem 2rem;
+  }
+
+  .banner-content-2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* About section */
+  .about .container {
+    padding: 4rem 2rem;
+  }
+
+  .content-1 {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  .text-section {
+    width: 100%;
+  }
+
+  .experience-box {
+    right: 2rem;
+  }
+
+  /* Facilities section */
+  .facilities-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* Dashboard stats */
+  .dash {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .stats-title {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .dashboard {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  /* Staff section */
+  .staff-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* Partners section */
+  .about-partners-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 4rem 2rem;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .newsletter {
+    grid-column: span 2;
+  }
+}
+
+ /* 1104 screen media for about page */
+
+
+ /* 1280 screen media for home page  */
+ @media screen and (max-width: 1280px) {
+  /* Navbar adjustments */
+  .navbar {
+    padding: 1rem 2rem;
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
+  }
+
+  /* Banner section */
+  .banner-content {
+    padding: 2rem;
+  }
+
+  .search-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* About section */
+  .about .content-1 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about .image-section,
+  .about .text-section {
+    width: 100%;
+  }
+
+  .experience-box {
+    left: 43rem;
+    bottom: 11rem;
+  }
+ 
+
+  /* Rooms section */
+  .rooms-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .room-card {
+    width: 100%;
+  }
+
+  /* Facilities section */
+  .facilities-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* Recent events */
+  .recent-events-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Testimonials */
+  .testimonials-container {
+    width: 90%;
+  }
+
+  /* Places section */
+  .places-container {
+    width: 90%;
+  }
+
+  /* Staff section */
+  .staff-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Statistics section */
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Blog section */
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Partners section */
+  .partners-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 3rem 2rem;
+  }
+
+  .footer-bottom {
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  /* 1280 screen media for home page page  end here  */
+
+}
+
+@media (max-width: 992px) {
+.image-section {
+    margin-bottom: 50px;
+  }
+
+  .image-section {
+    position: relative;
+  }
+
+  .footer-container {
+    margin-bottom: 15px;
+  }
+
+
+
+
+}
+@media (max-width: 428px) {
+  .staff-grid{
+    display: grid;
+    overflow-x: visible;
+  }
+
+  .likes {
+    margin-left: 0;
+}
+
+.customers-review {
+  padding: 3rem 0;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+}
+
+.facilities-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.rooms-container {
+  grid-template-columns: 1fr;
+  padding: 0;
+}
+
+.facilities-container {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 0;
+}
+
+.card-container {
+  grid-template-columns: 1fr;
+  gap: 40px; 
+  padding: 0;
+}
+
+.blog-section {
+  padding: 20px 0;
+}
+}
+
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding-left: 20px;
+  }
+
+  .dropdown-menu li {
+    width: 100%;
+  }
+ /* Header functionality end here  */
+
+ /* ---------------banner form----------------- */
+  .search-form {
+    position: static;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .search-form {
+    padding: 15px;
+  }
+
+  .search-form input, .search-form select, .btn-search {
+    padding: 10px;
+  }
+  /* ------------------Banner section------------------------ */
+
+  .room-note h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.price-tag {
+  font-size: 1rem;
+}
+
+.room-info h2 {
+  font-size: 1.3rem;
+}
+
+.room-note p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.room-note {
+  padding-top: 1rem;
+  margin: 2rem 0;
+}
+
+  .banner {
+    flex-direction: column;
+  }
+
+
+  .banner-content {
+    padding-top: 2rem;
+  }
+
+  .banner-content h1 {
+    font-size: 22px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  /* --------------------About----------------------- */
+
+  .content-1 {
+    display: grid;
+    width: 100%;
+}
+
+.text-section {
+  padding: 0; 
+}
+
+.text-section h1 {
+  font-size: 1.5rem;
+}
+
+.banner-content h1 {
+  font-size: 22px;
+  padding-top: 2rem;
+}
+
+  /*---------------------view room section 768 screen start here ----------*/
+
+  .amenities-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+
+  .tab {
+    padding: 5px 5px;
+    margin-bottom: 5px;
+  }  
+
+  .amenities-list {
+    flex-direction: column;
+  }
+
+  .extra-service-list li {
+    flex-direction: column;
+  }
+
+  /* -------------table pricing------------- */
+  .pricing-table th, .pricing-table td {
+    font-size: 14px;
+  }
+
+  /* .house-rules-list */
+
+  #house-rules h3 {
+    font-size: 20px;
+  }
+
+  .house-rules-list li {
+    font-size: 14px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .image-gallery {
+    margin-top: 20px;
+  }
+
+  .image-gallery img {
+    width: 100%;
+  }
+
+  .thumbnails img {
+    width: 50%;
+    height: 50px;
+}
+
+  .right-box {
+    width: 100%;
+}
+
+.review-card {
+  margin: 2rem 0;
+}
+
+.availability {
+  width: 100%;
+}
+
+.comment img {
+  height: 100px;
+}
+
+/* Media Query for become an instructor*/
+.instructor-section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.instructor-button {
+  margin-top: 20px;
+}
+
+.instructor-content h2 {
+  font-size: 24px;
+}
+
+.instructor-content p {
+  font-size: 14px;
+}
+
+
+/* Media Queries for availability sidebar*/
+.sidebar {
+  padding: 15px;
+}
+
+.sidebar-section h3 {
+  font-size: 18px;
+}
+
+.category-list li {
+  font-size: 14px;
+}
+
+.social-media-icons a {
+  font-size: 18px;
+  padding: 8px;
+}
+
+.tags-list {
+  gap: 5px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+  .content {
+    display: none;
+  }
+
+  .image-section {
+    margin-right: 0;
+    padding: 0;
+  }
+  /*--------------view room------------------*/
+  /* <!------------Event, popular places and Testimonial section ends------------> */
+
+  .container-2 {
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  section {
+    width: 100%;
+  }
+  
+  .recent-events-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .event {
+    width: 100%;
+  }
+
+  .testimonials-container {
+    width: 100%;
+  }
+
+ /* <!------------our staff section start------------> */
+
+  .staff-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0;
+  }
+
+  .staff-card {
+    height: 300px;
+    width: 100%;
+ }
+
+ /* <!------------Hotel Blog section ------------> */
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+ }
+
+ /* <!------------Hotel partners section ------------> */
+  .partners-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .partners-content {
+    margin-bottom: 20px;
+  }
+
+  .partners-logos {
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .partners-logos img {
+    max-width: 120px;
+  }
+
+  .partners-content {
+    width: 100%;
+    height: 200px;
+  }
+
+  .partners-content p {
+  padding: 10px;
+  font-size: 1rem;
+  }
+
+  .stat-icon img {
+    width: 300px;
+    height: auto;
+}
+
+/* <!------------Footer section ------------> */
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-bottom p {
+    margin-bottom: 20px;
+  }
+
+  /* ----------------partners section----------------- */
+
+  /* --------------Double room page style   here----------------  */
+  .room {
+    flex-direction: column;
+    margin: 0 0 20px 0 ;
+  }
+
+  .room-info {
+    margin-left: 0;
+  }
+
+
+
+}
+
+
+
+
+
+
+/* ------------------------------ */
+
+@media (max-width: 884px) {
+  .partners-content {
+    width: 100%;
+    display: none;
+    background-color: initial;
+  }
+
+  .place-card img {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 568px) {
+  .team-image{
+  padding-bottom:10rem;
+}
+
+.teamwork-image {
+  bottom: -50px; 
+}
+}
+
+
+
+@media (max-width: 480px) {
+  .staff-image{
+    background-position: initial;
+  }
+  .stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .stat {
+    width: 179px;
+    height: 150px;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .stats-title {
+    margin: 20px 0;
+}
+
+.stat-number {
+  font-size: 3rem;
+}
+
+.teamwork-image {
+  bottom: -50px; 
+}
+
+.stat-label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+  
+  .container-3 {
+    padding: 0;
+  }
+
+  .partners-content p {
+    margin: 0;
+  }
+
+  .features h3 {
+    font-size: 16px;
+  }
+
+  /*-------view room-----------------*/
+
+  .amenities-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    padding: 0;
+  }
+
+  .content h3 {
+    padding-bottom: 15px;
+  }
+
+  .author-profile {
+    left: 2%;
+}
+
+ /* -------------table pricing 480px------------- */
+  .pricing-table th, .pricing-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+}
+  /*----390 screen media view room page-------*/
+@media (max-width: 400px) {
+  section {
+    padding: 0;
+  }
+
+  .banner-2 {
+    padding: 0;
+  }
+
+  .banner-content-2 h1 {
+    font-size: 1.6rem;
+  }
+
+  .banner-content-2 p {
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  .room-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .duration h3 {
+    font-size: 1.2rem;
+  }
+
+  .thumbnails img {
+    max-width: 100%;
+    height: 50px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 7px 7px;
+    font-size: 14px;
+  }
+
+  .date-2 {
+    display: none;
+  }
+
+  .thumbnail {
+    width: 40px;
+    height: 40px;
+  }
+
+  .customers-review {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customers-review {
+    padding: 0rem 2rem;
+  }
+
+  .title h2 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem;
+  }
+
+  .card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .availability {
+    max-height: 2400px;
+    overflow-y: hidden;
+  }
+
+  .post-content {
+    margin-bottom: .7rem;
+  }
+
+  .stats-title {
+    margin: 2rem;
+  }
+
+  .dashboard {
+    display: grid;
+  }
+
+  .stat-icon img {
+    width: 200px;
+    height: 100%;
+  }
+
+  .stat-2 {
+    margin-bottom: 2rem;
+  }
+
+  .likes {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .likes h3 {
+    font-size: 1.4rem;
+  }
+
+  }
+
+ /*------------Home page 390px screen media------------------------*/
+
+ @media (max-width: 390px) {
+  .experience-box {
+    left: 30%;
+    left: 35%;
+    width: 150px;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .teamwork-image {
+    width: 285px;
+    bottom: 0%;
+  }
+
+  .tag i {
+    border-radius: 0;
+  }
+
+  .section-header h1 {
+    font-size: 2rem;
+  }
+
+  .rooms-container {
+    padding: 20px;
+}
+
+  .amenities {
+    justify-content: space-between;
+    column-gap: 10px; 
+  }
+  
+  .amenities > * {
+    flex-basis: calc(33.333% - 7px);
+    margin-bottom: 15px;
+  }
+
+  .section-header {
+    margin: 1rem;
+  }
+
+  .facilities-section {
+    padding: 15px;
+  }
+
+  .icon-details {
+    padding-left: 10px;
+  }
+
+  .container-3 {
+    padding: 15px;
+  }
+
+  .container-3 h2 {
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .stat {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+  .testimonials h2 {
+    margin-bottom: 1rem;
+  }
+
+  .popular-places h2 {
+    margin-bottom: 1rem;
+  }
+
+  .staff-section {
+    padding: 20px;
+  }
+
+  .staff-grid {
+  padding: 10px; 
+}
+
+.blog-section {
+  padding: 20px;
+}
+
+.partners-content {
+  padding: 20px;
+}
+
+.partners-logos {
+  padding: 20px;
+}
+
+.partners-logos {
+  width: 100%; 
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+}
+
+.review-image {
+  height: 100px;
+  width: 100px;
+}
+
+.room-note h2 {
+  font-size: 1.4rem; 
+}
+
+.room-note {
+  text-align: center;
+  padding-top: 1rem;
+  margin: 2rem 2rem;
+}
+
+ }

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Room Details</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">VISTA LUXE</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Index</a></li>
+        <li class="dropdown">
+          <a href="#">Rooms <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="single-room.html">Single Room</a></li>
+            <li><a href="double-room.html">Double Room</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Pages <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="booking-system.html">Booking System</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">Faq</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Blog <i class="fas fa-chevron-down"></i>
+          </i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Latest Posts</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="booking-system.html" id="btn" class="btn">Booking System</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!----------------------Banner style section  start here------------------------------->
+ <style>
+  .banner-2 {
+  position: relative;
+  background: url('/assets/img/banner.jpg') no-repeat center center/cover;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: var(--white);
+  padding: 40px;
+}
+
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.877);
+}
+
+.banner-content-2 {
+  z-index: 2;
+  text-align: center;
+}
+
+.banner-content-2 h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner-content-2 p {
+  font-size: 18px;
+  margin: 20px;
+}
+
+ </style>
+  <!----------------------Banner style section  ends here------------------------------->
+
+  <!----------------------Banner section  start here------------------------------->
+  <main class="banner-2">
+    <div class="overlay-2"></div>
+    <div class="banner-content-2">
+      <h1>Welcome To VISTA LUXE Hotel</h1>
+      "Capture unforgettable moments at VISTA LUXE Hotel with stunning night views."</p>
+    </div>
+    </div>
+  </main>
+  <!----------------------Banner section  ends here------------------------------->
+
+  <!----------------------view property  start here------------------------------->
+  <section class="section">
+    <div class="container">
+      <div class="right-box">
+        <div class="image-gallery">
+          <div class="intro">
+            <div class="room-content">
+              <h3>Super Deluxe Room</h3>
+              <i class="fas fa-map-marker-alt"></i> 123 Kathal St. Tampa City</p>
+            </div>
+            <div class="duration">
+              <h3>$2600.00</h3>
+              <p>Per Month</p>
+            </div>
+          </div>
+          <img id="mainImage" src="assets/img/double-img.jpg" alt="Main Image">
+          <div class="thumbnails">
+            <img src="assets/img/img-1.jpg" alt="Room 1" onclick="changeImage('assets/img/img-1.jpg')">
+            <img src="assets/img/img-2.jpg" alt="Room 2" onclick="changeImage('assets/img/img-2.jpg')">
+            <img src="assets/img/img-3.jpg" alt="Room 3" onclick="changeImage('assets/img/img-3.jpg')">
+            <img src="assets/img/img-6.jpg" alt="Room 5" onclick="changeImage('assets/img/img-6.jpg')">
+          </div>
+        </div>
+
+        <!-- ----------------------Accordion content ------------ -->
+        <div class="tabs">
+          <button class="tab active" data-target="description">Description</button>
+          <button class="tab" data-target="amenities">Amenities</button>
+          <button class="tab" data-target="house-rules">House Rules</button>
+          <button class="tab" data-target="pricing-plans">Pricing Plans</button>
+          <button class="tab" data-target="cancellation">Cancellation</button>
+          <button class="tab" data-target="extra-service">Extra Service</button>
+        </div>
+
+        <div class="content active" id="description">
+          <h3>Super Deluxe Room</h3>
+          <div class="room-description">
+            <p>A Super Deluxe Room typically offers a luxurious and spacious environment designed for comfort and relaxation. <br>
+
+              -Size and Space: The room is larger than standard rooms, offering ample space for movement, and may include additional seating areas like a comfortable lounge chair or a sofa.<br>
+                
+              - Furniture and Decor: 
+                - The room is furnished with premium materials, often including a plush king or queen-sized bed with high-quality linens.<br>
+                - Nightstands, elegant lamps, and possibly a writing desk or coffee table are also present.
+                - The decor may feature modern aesthetics with warm tones or classic touches depending on the hotel’s style, with framed artwork, soft lighting, and luxurious finishes.<br>
+              
+              - Technology and Amenities:<br> 
+                - A large flat-screen TV with cable/satellite channels.<br>
+                - High-speed Wi-Fi for entertainment and work.<br>
+                - A minibar, tea/coffee making facilities, and a well-stocked fridge.<br>
+                - Room-controlled air conditioning or heating.<br>
+                - A telephone and safe for valuables.<br>
+              
+              - Bathroom:<br>
+                - The bathroom is likely to feature premium fixtures, possibly including a marble vanity, rain shower, and/or bathtub.<br>
+                - Toiletries are of high quality, with soft towels, bathrobes, and slippers provided for guests.<br>
+              
+              - Views and Additional Perks: <br>
+                - The room might offer great views of the city skyline, garden, or pool area through large windows or a private balcony.<br>
+                - Additional services could include room service, housekeeping, and laundry on demand.<br>
+              
+              A Super Deluxe Room combines elegance with comfort, creating a more refined and exclusive stay experience for guests.</p>
+          </div>
+        </div>
+      <!-- ----------------------Accordion content ------------ -->
+
+        <!-------------------------Amenities section------------------------------>
+        <div class="content" id="amenities">
+          <h3>Amenities</h3>
+          <div class="amenities-list">
+            <div class="amenity"><i class="fas fa-sun icon"></i> Air conditioning</div>
+            <div class="amenity"><i class="fas fa-bed icon"></i> 2 Bedroom</div>
+            <div class="amenity"><i class="fas fa-concierge-bell icon"></i> Room Service</div>
+            <div class="amenity"><i class="fas fa-mountain-sun icon"></i> Balcony</div>
+            <div class="amenity"><i class="fas fa-newspaper icon"></i> Free Newspaper</div>
+            <div class="amenity"><i class="fas fa-utensils icon"></i> Breakfast</div>
+            <div class="amenity"><i class="fas fa-dumbbell icon"></i> Gym</div>
+            <div class="amenity"><i class="fas fa-person-swimming icon"></i> Use of pool</div>
+            <div class="amenity"><i class="fas fa-phone icon"></i> Telephone</div>
+            <div class="amenity"><i class="fas fa-car icon"></i> Parking</div>
+            <div class="amenity"><i class="fas fa-tv icon"></i> TV</div>
+            <div class="amenity"><i class="fas fa-smoking-ban icon"></i> No Smoking</div>
+            <div class="amenity"><i class="fas fa-water icon"></i> Beach View</div>
+            <div class="amenity"><i class="fas fa-wifi icon"></i> Free Wi-Fi</div>
+          </div>
+        </div>
+
+        <!-----------------------House Rules section------------------------------->
+        <div class="content" id="house-rules">
+          <h3>House Rules</h3>
+          <ul class="house-rules-list">
+            <li><i class="fas fa-check"></i> Check-in: 10:00 AM - 7:00 PM</li>
+            <li><i class="fas fa-check"></i> Checkout: 11:00 AM</li>
+            <li><i class="fas fa-check"></i> No smoking</li>
+            <li><i class="fas fa-check"></i> No pets</li>
+            <li><i class="fas fa-check"></i> No parties or events</li>
+            <li><i class="fas fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.</li>
+          </ul>
+        </div>
+      
+
+        <!-------------------------Pricing Plans section-------------------------->
+        <div class="content" id="pricing-plans">
+          <h3>Pricing Plans</h3>
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+              </tr>
+            </thead>
+              <tbody>
+                <tr>
+                  <td>$250</td>
+                  <td>$250</td>
+                  <td>$250</td>
+                  <td>$250</td>
+                  <td>$250</td>
+                  <td>$250</td>
+                  <td>$250</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+
+        <!--------------Cancellation section------------------------>
+        <div class="content" id="cancellation">
+          <p>Cancellation policy content goes here.</p>
+        </div>
+
+        <!--------------Extra Service section------------------------>
+        <div class="content" id="extra-service">
+          <h3>Extra Service</h3>
+          <ul class="extra-service-list">
+            <li><span>Air Conditioner</span><span class="price">+24$ to price per person</span></li>
+            <li><span>Free Internet</span><span class="price">+14$ to price per person</span></li>
+            <li><span>LCD Television</span><span class="price">+15$ to price per person</span></li>
+            <li><span>Microwave</span><span class="price">+30$ to price per person</span></li>
+          </ul>
+        </div>
+        <!-------------------------accordion js here-------------------------------->
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+              // Remove active class from all tabs
+              tabs.forEach(t => t.classList.remove('active'));
+
+              // Hide all contents
+              contents.forEach(content => content.classList.remove('active'));
+
+              // Add active class to clicked tab
+              this.classList.add('active');
+
+              // Show the corresponding content
+              const target = this.getAttribute('data-target');
+              document.getElementById(target).classList.add('active');
+            });
+        });
+      });
+
+        </script>
+        <!-------------------------accordion jsend here--------------------------->
+
+        <!-----------------------coments section star here----------------------->
+
+        <div class="title">
+          <h2>Room Reviews</h2>
+        </div>
+        <div class="reviews-section">
+          <div class="card">
+            <div class="author-profile">
+            <img src="assets/img/avatar-1.jpg" alt="Paran Karen">
+            </div>
+            <div class="review-card-1">
+              <div class="reviewer-details">
+                <!-----name and button--->
+                <div class="name">
+                  <h3>Paran Karen</h3>
+                  <div class="review-footer">
+                    <div class="date-2">8:42 PM 3/3/2020</div>
+                    <button class="reply-btn"><a href="#">Reply</a></button>
+                  </div>
+                </div>
+                <!-----rating stars--->
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                  <span>(Rating)</span>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem.</p>
+            </div>
+          </div>   
+
+          <div class="card">
+            <div class="author-profile">
+            <img src="assets/img/avatar-2.jpg" alt="Paran Karen">
+            </div>
+            <div class="review-card-1">
+              <div class="reviewer-details">
+                <!-----name and button--->
+                <div class="name">
+                  <h3>Paran Karen</h3>
+                  <div class="review-footer">
+                    <span class="date-2">8:42 PM 3/3/2020</span>
+                    <button class="reply-btn"><a href="#">Reply</a></button>
+                  </div>
+                </div>
+                <!-----rating stars--->
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                  <span>(Rating)</span>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem.</p>
+            </div>
+          </div>   
+
+          <div class="card">
+            <div class="author-profile">
+            <img src="assets/img/avatar-3.jpg" alt="Paran Karen">
+            </div>
+            <div class="review-card-1">
+              <div class="reviewer-details">
+                <!-----name and button--->
+                <div class="name">
+                  <h3>Paran Karen</h3>
+                  <div class="review-footer">
+                    <span class="date-2">8:42 PM 3/3/2020</span>
+                    <button class="reply-btn"><a href="#">Reply</a></button>
+                  </div>
+                </div>
+                <!-----rating stars--->
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                    <span>(Rating)</span>
+                </div>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt aliquam. Aliquam gravida massa at sem.</p>
+            </div>
+          </div>   
+        </div>
+
+        
+        <div class="leave">
+          <h2>Leave a Comment</h2>
+        </div>
+        
+        <form class="contact-form">
+          <div class="input-group">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email Address" required>
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="Subject" required>
+            <input type="tel" placeholder="Phone" required>
+          </div>
+          <textarea placeholder="Write message" required></textarea>
+          <div class="submit-btn" type="submit"><a href="#">Submit Now</a></div>
+        </form>
+        
+        <!-----------------------coments section end here----------------------->
+
+      </div>
+        
+      
+      <div class="availability">
+        <h3>Check Availability</h3>
+        <h4>$270.00/Night</h4>
+        <form>
+          <input type="date" placeholder="Check In">
+          <input type="date" placeholder="Check Out">
+          
+          <div class="flex">
+            <div class="box">
+              <select>
+                <option>Room</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+        
+            <div class="box">
+              <select>
+                <option>Beds</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+            
+            <div class="box">
+              <select>
+                <option>Adults</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+            </div>
+        
+            <div class="box">
+              <select>
+                <option>Children</option>
+                <option>0</option>
+                <option>1</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Book Now</button>
+        </form>
+        <div class="border"></div>
+
+        <div class="recent-post">
+          <h3>Recent Post</h3>
+          <div class="post">
+            <img src="assets/img/img-1.jpg" alt="recent-post">
+            <div class="post-content">
+              <h4>Host a Family Party</h4>
+              <p>$950.00 | <i class="fa fa-calendar"></i> Aug. 25th, 2019</p>
+            </div>
+          </div>
+          <div class="post">
+            <img src="assets/img/img-2.jpg" alt="recent-post">
+            <div class="event-content">
+              <h4>Room with View</h4>
+              <p>$950.00 | <i class="fa fa-calendar"></i> Aug. 25th, 2019</p>
+            </div>
+          </div>
+          <div class="post">
+            <img src="assets/img/img-3.jpg" alt="recent-post">
+            <div class="event-content">
+              <h4>Double Room</h4>
+              <p>$599,00| <i class="fa fa-calendar"></i> Aug. 25th, 2019</p>
+            </div>
+          </div>
+        </div>
+        <!-- -----------------------------sidebar------------------------------------- -->
+
+        <div class="sidebar">
+          <!-- Category Section -->
+          <div class="sidebar-section category">
+            <h3>Category</h3>
+            <ul class="category-list">
+              <li>Air Conditioner <span>(45)</span></li>
+              <li>Promotion <span>(21)</span></li>
+              <li>Events <span>(23)</span></li>
+              <li>Creative <span>(19)</span></li>
+              <li>Design <span>(19)</span></li>
+              <li>Other <span>(22)</span></li>
+            </ul>
+          </div>
+        
+          <!-- Social Media Section -->
+          <div class="sidebar-section social-media">
+            <h3>Social Media</h3>
+            <div class="social-media-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        
+          <!-- Tags Section -->
+          <div class="sidebar-section tags">
+            <h3>Tags</h3>
+            <div class="tags-list">
+              <span class="tag-1">Rooms</span>
+              <span class="tag-1">Promotion</span>
+              <span class="tag-1">Creative</span>
+              <span class="tag-1">Events</span>
+              <span class="tag-1">Design</span>
+              <span class="tag-1">Gallery</span>
+              <span class="tag-1">Travel</span>
+              <span class="tag-1">Video</span>
+              <span class="tag-1">Audio</span>
+            </div>
+          </div>
+        </div>
+        <div class="location">
+          <h3>Location</h3>
+        </div>
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_LINK" 
+            width="100%" 
+            height="450px" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="recent-comments">
+          <h3>Recent Post</h3>
+          <div class="comment">
+            <img src="assets/img/avatar-3.jpg" alt="recent-post">
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores id nulla eius distinctio maiores consequuntur beatae perferendis! Voluptas, a iste.</p>
+              <p>By: <span>marry Morgan</span></p>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="assets/img/avatar-1.jpg" alt="recent-post">
+            <div class="post-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eveniet enim porro voluptas doloremque dolores animi saepe natus accusamus sit!</p>
+              <p>By: <span>Kobbie Gee</span></p>
+            </div>
+          </div>
+
+        
+      </div>
+    </div>
+
+  </section>
+  <!----------------------view property   ends here------------------------------->
+
+  <!-- -------------------instructor-section start here----------------------->
+  <main class="instructor-section">
+  <div class="instructor-content">
+    <h2>Become An Instructor</h2>
+    <p>Join thousands of instructors and earn money hassle-free</p>
+  </div>
+  <div class="instructor-button">
+    <a href="#" class="btn-slide-up">Contact Now</a>
+  </div>
+  </main>
+  <!-- -------------------instructor-section end here----------------------->
+
+  <!-- -------------------Footer section start here----------------------->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Address: 44 New Design Street</p>
+        <p><i class="fas fa-envelope"></i> Email: mkeghtorgaiver@mail.com</p>
+        <p><i class="fas fa-phone-alt"></i> Phone: +234-8084701598</p>
+        <p><i class="fas fa-fax"></i> Fax: +0477 85X6 552</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Booking</h3>
+        <ul>
+          <li><a href="#">Rooms & Suites</a></li>
+          <li><a href="#">Restaurant</a></li>
+          <li><a href="#">Hotel</a></li>
+          <li><a href="#">Our Facilities</a></li>
+          <li><a href="#">Rooms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog & Events</a></li>
+          <li><a href="#">Booking</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to receive updates, promotions, and news.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your Email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Iver Moses Design. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- -------------------Footer section end here----------------------->
+
+<script src="js/scripts.js"></script>
+  </body>
+</html>
